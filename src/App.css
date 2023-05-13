@@ -1,0 +1,296 @@
+body{
+  background-color: aliceblue;
+  color: #212529;
+  transition: all .3s linear 0s;
+}
+.main{
+  width: 78rem;
+  margin:auto;
+}
+.page{
+  width:85%;
+  margin-left: 6rem;
+  font-family: 'Hi Melody', cursive;
+  font-family: 'Roboto Slab', serif;
+  padding-bottom: 4rem;
+}
+h4{
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+h4:hover{
+  transform: scale(1.02);
+  color: #919191;
+}
+.s1,.s2,.s3,.s4{
+  display: flex;
+  flex-direction: row;
+}
+.service-info{
+  padding-right: 6rem;
+  width: 40%;
+}
+h2{
+  font-size: 300%;
+  margin: 0;
+  padding-top: 0.4rem;
+  padding-right: 3rem;
+  font-weight: 300;
+  line-height:1.2em;
+  cursor: pointer;
+}
+h2:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0.4px 0.1px rgba(0,0,0,0.2);
+}
+h3{
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-top: 2.4rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0;
+}
+.service-link{
+  display: flex;
+  flex-direction: row;
+}
+p{
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-right: 2.2rem;
+  cursor: pointer;
+  transition: 0.1s;
+}
+p:hover{
+  opacity: 0.6;
+}
+.pointer{
+  padding-top: 0.3rem;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.pointer:hover{
+  opacity: 0.7;
+}
+.service-image{
+  height: 20rem;
+}
+.service-image-1{
+  width:33.19125rem;
+  height: 20rem;
+}
+.service-image-ns{
+  width:33.19125rem;
+  height: 20rem;
+}
+.image-holder-phone{
+  display: none;
+}
+.outer-image-holder{
+  background-color: transparent;
+  perspective: 1000px;
+}
+.image-holder-pc{
+  height: 20rem;
+  text-align: center;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+.outer-image-holder:hover .image-holder-pc{
+  transform: rotateY(180deg);
+}
+@media screen and (min-width:500px) {
+  .image-holder-phone{
+    display: none;
+  }
+  .image-holder-pc{
+    display: block;
+  }
+}
+@media screen and (max-width:768px){
+  html{
+    font-size: 85%;
+  }
+}
+@media screen and (max-width:435px){
+.image-holder-phone{
+  display: block;
+  margin-top: 1rem;
+}
+.image-holder-pc{
+  display: none;
+}
+html{
+  font-size: 240%;
+}
+ .service-info{
+  width:35.5rem;
+}
+h4{
+  padding-left: 0.2rem;
+  margin-bottom: 0;
+  margin-top: 3rem;
+}
+h3{
+  padding-top: 0.8rem;
+}
+h2{
+  padding-top: 2rem;
+}
+.service-image-1{
+  width:95%;
+}
+.service-image{
+  width:95%;
+}
+.service-image-ns{
+  width:95%;
+}
+.page{
+  margin-left: 4.5rem;
+} 
+p{
+  color:rgb(0, 81, 255);
+}
+}
+
+ @media screen and (max-width:380px){
+  .image-holder-phone{
+    display: block;
+    margin-top: 1rem;
+  }
+  .image-holder-pc{
+    display: none;
+  }
+  html{
+    font-size: 210%;
+  }
+  .service-info{
+    width:35.5rem;
+  }
+  h4{
+    padding-left: 0.2rem;
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+  h3{
+    padding-top: 0.8rem;
+  }
+  h2{
+    padding-top: 2rem;
+  }
+  .service-image-1{
+    width:95%;
+  }
+  .service-image{
+    width:95%;
+  }
+  .service-image-ns{
+    width:95%;
+  }
+  .page{
+    margin-left: 4.5rem;
+  }
+  p{
+    color:rgb(0, 81, 255);
+  }
+} 
+
+@media screen and (max-width:340px){
+  .image-holder-phone{
+    display: block;
+    margin-top: 1rem;
+  }
+  .image-holder-pc{
+    display: none;
+  }
+  html{
+    font-size: 180%;
+  }
+  .service-info{
+    width:35.5rem;
+  }
+  h4{
+    padding-left: 0.2rem;
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+  h3{
+    padding-top: 0.8rem;
+  }
+  h2{
+    padding-top: 2rem;
+  }
+  .service-image-1{
+    width:95%;
+  }
+  .service-image{
+    width:95%;
+  }
+  .service-image-ns{
+    width:95%;
+  }
+  .page{
+    margin-left: 4rem;
+  }
+  p{
+    color:rgb(0, 81, 255);
+  }
+} 
+
+.s1{
+  animation: slide-up 0.5s ease-in;
+
+}
+.s2{
+  animation: slide-up 0.7s ease-in;
+
+}
+.s3{
+  animation: slide-up 1.2s ease-in;
+
+}
+.s4{
+  animation: slide-up 1.5s ease-in;
+
+}
+
+@keyframes slide-up {
+  from{
+    opacity: 0.2;
+    transform: translateY(10rem);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.dark-mode{
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  background-color:#212529;
+  border: solid;
+  border-width: 0.5px;
+  border-color: aliceblue;
+  color: aliceblue;
+  margin-top: 4rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.dark-mode:hover{
+  opacity: 0.8;
+}
+.dark{
+  background-color: #212529;
+  color: aliceblue;
+}
+
